@@ -42,7 +42,7 @@ export default function HomePage() {
       <Head>
         <meta charSet="utf-8" />
         <meta name="robots" content="index, follow" />
-        <meta name="description" content="Gerenciador para RPG" />
+        <meta name="description" content="NokyTurno" />
         <meta name="author" content="Noky" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="icon" href="/Imagens/Perfil-semfundo.png" />
