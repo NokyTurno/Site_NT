@@ -1,8 +1,8 @@
 // components/Horarios.js
 const Horarios = ({ visible }) => (
     <div className={`horarios ${visible ? 'visible' : 'hidden'}`}>
-        <label className="titulo">Calendario da semana</label>
-        <a className="live" href="https://twitch.tv/nokyturno" style={{ fontFamily: 'WCManoNegraBta, Arial, sans-serif' }}>twitch.tv/nokyturno</a>
+        <label className="titulo" style={{ fontFamily: 'Gagalin, Arial, sans-serif' }}>Calendario da semana</label>
+        <a className="live" href="https://twitch.tv/nokyturno" target="_blank" rel="noopener noreferrer"  style={{ fontFamily: 'WCManoNegraBta, Arial, sans-serif' }}>Lives NokyTurno</a>
         <nav>
             <ul>
                 <li className="diasemana">
@@ -81,7 +81,7 @@ const Horarios = ({ visible }) => (
                 .titulo {
                     padding-top: .5rem;
                     padding-bottom: .5rem;
-                    font-size: 4rem;
+                    font-size: 3.5rem;
                     color: #fff; /* Cor do texto */
                     text-shadow: 
                         0 0 5px #0075ff, /* Primeira camada de sombra (neon mais próximo) */

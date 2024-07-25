@@ -2,9 +2,9 @@
 const Home = ({ visible }) => (
     <div className={`horarios ${visible ? 'visible' : 'hidden'}`}>
         <label className="titulo" style={{ fontFamily: 'Chewy, Arial, sans-serif' }}>Bem Vindo</label>
-        <a className="live" href="https://twitch.tv/nokyturno" style={{ fontFamily: 'WCManoNegraBta, Arial, sans-serif' }}>Lives Nokyturno</a>
+        <a className="live" href="https://twitch.tv/nokyturno" target="_blank" rel="noopener noreferrer"  style={{ fontFamily: 'WCManoNegraBta, Arial, sans-serif' }}>Lives NokyTurno</a>
         <div className="texto">
-        <textarea readOnly defaultValue="Gosto de jogos no estilo, historia, ação, aventura, RPG e sobrevivência, e sou péssimo em jogos de FPS. Espero poder conversar e dar altas gargalhadas juntos, mas se assustar e ficar triste tbm, é claro espero que essa ultima parte seja só com as histórias dos jogos, mas se não, vamos nos ajudar." style={{ fontFamily: 'Chewy, Arial, sans-serif' }} />
+            <textarea readOnly defaultValue="Gosto de jogos no estilo, historia, ação, aventura, RPG e sobrevivência, e sou péssimo em jogos de FPS. Espero poder conversar e dar altas gargalhadas juntos, mas se assustar e ficar triste tbm, é claro espero que essa ultima parte seja só com as histórias dos jogos, mas se não, vamos nos ajudar." style={{ fontFamily: 'Chewy, Arial, sans-serif' }} />
 
         </div>
         <nav className="finalsemana">
@@ -13,15 +13,15 @@ const Home = ({ visible }) => (
                     <nav className="linkredes">
                         <ul>
                             <li>
-                                <a className="Redes" href="https://www.tiktok.com/@nokyturno" style={{ fontFamily: 'Chewy, Arial, sans-serif' }}>TikTok</a>
-                                <a className="Redes" href="https://x.com/NokyTurno" style={{ fontFamily: 'Chewy, Arial, sans-serif' }}>Twitter</a>
+                                <a className="Redes" href="https://www.tiktok.com/@nokyturno" target="_blank" rel="noopener noreferrer" style={{ fontFamily: 'Chewy, Arial, sans-serif' }}>TikTok</a>
+                                <a className="Redes" href="https://x.com/NokyTurno" target="_blank" rel="noopener noreferrer" style={{ fontFamily: 'Chewy, Arial, sans-serif' }}>Twitter</a>
                             </li>
                             <li>
-                                <a className="Redes" href="https://discord.gg/xz9KDPZnz6" style={{ fontFamily: 'Chewy, Arial, sans-serif' }}>Instagram</a>
-                                <a className="Redes" href="https://www.youtube.com/@NokyTurno" style={{ fontFamily: 'Chewy, Arial, sans-serif' }}>YouTube</a>
+                                <a className="Redes" href="https://discord.gg/xz9KDPZnz6" target="_blank" rel="noopener noreferrer" style={{ fontFamily: 'Chewy, Arial, sans-serif' }}>Instagram</a>
+                                <a className="Redes" href="https://www.youtube.com/@NokyTurno" target="_blank" rel="noopener noreferrer" style={{ fontFamily: 'Chewy, Arial, sans-serif' }}>YouTube</a>
                             </li>
                             <li>
-                                <a className="Redes" href="https://discord.gg/xz9KDPZnz6" style={{ fontFamily: 'Chewy, Arial, sans-serif' }}>Discord</a>
+                                <a className="Redes" href="https://discord.gg/xz9KDPZnz6" target="_blank" rel="noopener noreferrer" style={{ fontFamily: 'Chewy, Arial, sans-serif' }}>Discord</a>
                             </li>
                         </ul>
                     </nav>
@@ -29,9 +29,11 @@ const Home = ({ visible }) => (
                 <li className="finalsemana">
                 </li>
                 <li>
-                    <button className="donate" href="https://livepix.gg/nokyturno" style={{ fontFamily: 'Chewy, Arial, sans-serif' }}>
-                        <a>Donate</a><br />
-                        <a className="donate2">$</a>
+                    <button className="donate" style={{ fontFamily: 'Chewy, Arial, sans-serif' }}>
+                        <a href="https://livepix.gg/nokyturno" target="_blank" rel="noopener noreferrer">
+                            Donate
+                        </a><br />
+                        <a href="https://livepix.gg/nokyturno" target="_blank" rel="noopener noreferrer" className="donate2">$</a>
                     </button>
                 </li>
             </ul>
@@ -88,6 +90,11 @@ const Home = ({ visible }) => (
                 border-radius: 20px;
                 font-size: 2rem;
                 margin: .5rem 2rem 2rem 2rem;
+            }
+
+            .donate a{
+                color: #fff; /* Cor do texto */
+                text-decoration: none;
             }
 
             .donate2 {
