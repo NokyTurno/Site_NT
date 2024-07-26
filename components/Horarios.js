@@ -47,7 +47,7 @@ const Horarios = ({ visible }) => (
                 background-color: #a0a0a042;
                 border: .3rem solid #fff;
                 border-radius: 20px;
-                width: 70%; /* Ajustado para largura maior em telas pequenas */
+                width: 50%; /* Ajustado para largura maior em telas pequenas */
                 height: 70%; /* Ajustado para altura automática */
                 font-size: 18px;
                 position: absolute;
@@ -55,7 +55,7 @@ const Horarios = ({ visible }) => (
                 flex-direction: column;
                 align-items: center;
                 top: 50%;
-                left: 50%;
+                left: 40%;
                 transform: translate(-50%, -50%);
                 z-index: 2;
                 padding: 1rem; /* Adicionado padding para melhor espaçamento */
@@ -156,6 +156,8 @@ const Horarios = ({ visible }) => (
             @media (max-width: 768px) {
                 .horarios {
                     width: 80%; /* Ajustado para largura maior em telas pequenas */
+                    left: 50%;
+                    top: 60%;
                     height: auto; /* Altura automática para melhor ajuste */
                     padding: 1rem;
                 }
