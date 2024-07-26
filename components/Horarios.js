@@ -157,7 +157,7 @@ const Horarios = ({ visible }) => (
                 .horarios {
                     width: 80%; /* Ajustado para largura maior em telas pequenas */
                     left: 50%;
-                    top: 60%;
+                    top: 50%;
                     height: auto; /* Altura automática para melhor ajuste */
                     padding: 1rem;
                 }
