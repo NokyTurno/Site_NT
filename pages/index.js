@@ -9,8 +9,8 @@ import Minecraft from '../components/Minecraft';
 export default function HomePage() {
   const [barraVisible, setBarraVisible] = useState(false);
   const [horariosVisible, setHorariosVisible] = useState(false);
-  const [homeVisible, setHomeVisible] = useState(false);
-  const [MineVisible, setMineVisible] = useState(false);
+  const [homeVisible, setHomeVisible] = useState(true);
+  const [mineVisible, setMineVisible] = useState(false);
 
   const toggleBarra = () => {
     setBarraVisible(!barraVisible);
@@ -29,7 +29,7 @@ export default function HomePage() {
     setHomeVisible(true); // Exibe Home
     setMineVisible(false); // Oculta Home
   };
-  
+
   const MineOpen = () => {
     setBarraVisible(false); // Oculta Barra
     setHorariosVisible(false); // Oculta Horarios
@@ -59,7 +59,7 @@ export default function HomePage() {
           </div>
           <Home visible={homeVisible} />
           <Horarios visible={horariosVisible} />
-          <Minecraft visible={MineVisible} />
+          <Minecraft visible={mineVisible} />
         </main>
       </div>
     </>
