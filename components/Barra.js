@@ -22,15 +22,7 @@ const Barra = ({ visible, MineOpen }) => {
                         <li>
                             <div className="line-vertical"></div>
                             <div className="line-horizontal"></div>
-<<<<<<< HEAD
-<<<<<<< HEAD
                             <a title="Incore" onClick={MineOpen}>Minecraft Server</a>
-=======
-                            <a title="Incore" onClick={MineOpen}>Minecraft</a>
->>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
-=======
-                            <a title="Incore" onClick={MineOpen}>Minecraft</a>
->>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
                         </li>
                     </ul>
                 </nav>
@@ -38,46 +30,20 @@ const Barra = ({ visible, MineOpen }) => {
 
             <style jsx>{`
                 aside {
-<<<<<<< HEAD
-<<<<<<< HEAD
                     background-color: #0000008a;
-=======
-                    background-color: #000000a6;
->>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
-=======
-                    background-color: #000000a6;
->>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
                     color: #000000;
                     width: 20%;
                     padding: 20px;
                     box-sizing: border-box;
                     flex-direction: column;
                     height: 98vh;
-<<<<<<< HEAD
-<<<<<<< HEAD
                     position: fixed; 
                     z-index: 9999; 
-=======
-                    position: fixed; /* Mudado para fixed para que fique na frente de tudo */
-                    z-index: 9999; /* Z-index alto para garantir que fique na frente */
->>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
-=======
-                    position: fixed; /* Mudado para fixed para que fique na frente de tudo */
-                    z-index: 9999; /* Z-index alto para garantir que fique na frente */
->>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
                 }
 
                 :root {
                     --primary-item: #6c6c6c;
-<<<<<<< HEAD
-<<<<<<< HEAD
                     --background-item: #000000;
-=======
-                    --background-item: #ooooo;
->>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
-=======
-                    --background-item: #ooooo;
->>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
                     --gray: #D5D4D5;
                     --background: #2c2c2c;
                     --item-non-hover: #ffffff;
@@ -223,8 +189,6 @@ const Barra = ({ visible, MineOpen }) => {
                     height: 2px;
                     min-width: 12px;
                 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
                 @media (max-width: 1200px) {
                     aside {
@@ -273,10 +237,6 @@ const Barra = ({ visible, MineOpen }) => {
                         width: 100%;
                     }
                 }
-=======
->>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
-=======
->>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
             `}</style>
         </aside>
     );
