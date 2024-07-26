@@ -1,4 +1,3 @@
-// pages/index.js
 import Head from 'next/head';
 import { useState } from 'react';
 import Menu from '../components/Menu';
@@ -30,11 +29,12 @@ export default function HomePage() {
     setHomeVisible(true); // Exibe Home
     setMineVisible(false); // Oculta Home
   };
+  
   const MineOpen = () => {
     setBarraVisible(false); // Oculta Barra
     setHorariosVisible(false); // Oculta Horarios
-    setHomeVisible(false); // Exibe Home
-    setMineVisible(true); // Oculta Home
+    setHomeVisible(false); // Oculta Home
+    setMineVisible(true); // Exibe Home
   };
 
   return (
