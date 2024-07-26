@@ -2,42 +2,32 @@
 const Home = ({ visible }) => (
     <div className={`horarios ${visible ? 'visible' : 'hidden'}`}>
         <label className="titulo" style={{ fontFamily: 'Chewy, Arial, sans-serif' }}>Bem Vindo</label>
-        <a className="live" href="https://twitch.tv/nokyturno" target="_blank" rel="noopener noreferrer"  style={{ fontFamily: 'WCManoNegraBta, Arial, sans-serif' }}>Lives NokyTurno</a>
+        <a className="live" href="https://twitch.tv/nokyturno" target="_blank" rel="noopener noreferrer" style={{ fontFamily: 'WCManoNegraBta, Arial, sans-serif' }}>Lives NokyTurno</a>
         <div className="texto">
-            <textarea readOnly defaultValue="Gosto de jogos no estilo, historia, ação, aventura, RPG e sobrevivência, e sou péssimo em jogos de FPS. Espero poder conversar e dar altas gargalhadas juntos, mas se assustar e ficar triste tbm, é claro espero que essa ultima parte seja só com as histórias dos jogos, mas se não, vamos nos ajudar." style={{ fontFamily: 'Chewy, Arial, sans-serif' }} />
-
+            <a style={{ fontFamily: 'Chewy, Arial, sans-serif' }}>Gosto de jogos no estilo, historia, ação, aventura, RPG e sobrevivência, e sou péssimo em jogos de FPS. Espero poder conversar e dar altas gargalhadas juntos, mas se assustar e ficar triste tbm, é claro espero que essa ultima parte seja só com as histórias dos jogos, mas se não, vamos nos ajudar. </a>
         </div>
-        <nav className="finalsemana">
+        <nav className="linkredes">
             <ul>
                 <li>
-                    <nav className="linkredes">
-                        <ul>
-                            <li>
-                                <a className="Redes" href="https://www.tiktok.com/@nokyturno" target="_blank" rel="noopener noreferrer" style={{ fontFamily: 'Chewy, Arial, sans-serif' }}>TikTok</a>
-                                <a className="Redes" href="https://x.com/NokyTurno" target="_blank" rel="noopener noreferrer" style={{ fontFamily: 'Chewy, Arial, sans-serif' }}>Twitter</a>
-                            </li>
-                            <li>
-                                <a className="Redes" href="https://discord.gg/xz9KDPZnz6" target="_blank" rel="noopener noreferrer" style={{ fontFamily: 'Chewy, Arial, sans-serif' }}>Instagram</a>
-                                <a className="Redes" href="https://www.youtube.com/@NokyTurno" target="_blank" rel="noopener noreferrer" style={{ fontFamily: 'Chewy, Arial, sans-serif' }}>YouTube</a>
-                            </li>
-                            <li>
-                                <a className="Redes" href="https://discord.gg/xz9KDPZnz6" target="_blank" rel="noopener noreferrer" style={{ fontFamily: 'Chewy, Arial, sans-serif' }}>Discord</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </li>
-                <li className="finalsemana">
+                    <a className="Redes" href="https://www.tiktok.com/@nokyturno" target="_blank" rel="noopener noreferrer" style={{ fontFamily: 'Chewy, Arial, sans-serif' }}>TikTok</a>
+                    <a className="Redes" href="https://x.com/NokyTurno" target="_blank" rel="noopener noreferrer" style={{ fontFamily: 'Chewy, Arial, sans-serif' }}>Twitter</a>
+                    <a className="Redes" href="https://discord.gg/xz9KDPZnz6" target="_blank" rel="noopener noreferrer" style={{ fontFamily: 'Chewy, Arial, sans-serif' }}>Instagram</a>
                 </li>
                 <li>
-                    <button className="donate" style={{ fontFamily: 'Chewy, Arial, sans-serif' }}>
-                        <a href="https://livepix.gg/nokyturno" target="_blank" rel="noopener noreferrer">
-                            Donate
-                        </a><br />
-                        <a href="https://livepix.gg/nokyturno" target="_blank" rel="noopener noreferrer" className="donate2">$</a>
-                    </button>
+                    <a className="Redes" href="https://www.youtube.com/@NokyTurno" target="_blank" rel="noopener noreferrer" style={{ fontFamily: 'Chewy, Arial, sans-serif' }}>YouTube</a>
+                    <a className="Redes" href="https://discord.gg/xz9KDPZnz6" target="_blank" rel="noopener noreferrer" style={{ fontFamily: 'Chewy, Arial, sans-serif' }}>Discord</a>
                 </li>
             </ul>
         </nav>
+        <button
+            className="donate"
+            style={{ fontFamily: 'Chewy, Arial, sans-serif' }}
+            onClick={() => window.open('https://livepix.gg/nokyturno', '_blank', 'noopener noreferrer')}
+        >
+            Donate
+            <br />
+            <span className="donate2">$</span>
+        </button>
 
         <style jsx>{`
             .horarios {
@@ -58,6 +48,16 @@ const Home = ({ visible }) => (
                 z-index: 2; /* Para garantir que fique à frente da imagem */
             }
 
+            .horarios .texto{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 80%;
+                height: 20%;
+                font-size: 16px;
+                text-align: center; /* Centraliza o texto */
+            }
+
             .diasemana {
                 border: .3rem solid #fff;
                 border-radius: 20px;
@@ -73,7 +73,7 @@ const Home = ({ visible }) => (
                 background-color: #0000;
             }
 
-            .finalsemana button:hover{
+            button:hover{
                 background-color: #0000;
                 text-shadow: 
                     0 0 5px #0075ff, /* Primeira camada de sombra (neon mais próximo) */
@@ -84,8 +84,8 @@ const Home = ({ visible }) => (
 
             .donate {
                 height: 10rem;
-                width: 10rem;
-                background-color: #7b03d824;
+                width: 80%;
+                background-color: #8e3dcd12;
                 border: .3rem solid #fff;
                 border-radius: 20px;
                 font-size: 2rem;
@@ -256,9 +256,49 @@ const Home = ({ visible }) => (
                 border-radius: 5px;
                 cursor: pointer;
             }
+                /* Media Queries */
+            @media (max-width: 768px) {
+                .titulo {
+                    font-size: 1.5rem; /* Ajustado para telas menores */
+                }
 
-            button:hover {
-                background-color: #555555;
+                .live {
+                    font-size: 1.25rem; /* Ajustado para telas menores */
+                }
+
+                .donate {
+                    font-size: 1.25rem; /* Ajustado para telas menores */
+                }
+
+                .donate2 {
+                    font-size: 1.5rem; /* Ajustado para telas menores */
+                }
+            }
+
+            @media (max-width: 480px) {
+                .horarios {
+                    width: 90%;
+                    display: flex;
+                    align-items: center;
+                    left: 50%;
+                    height: auto;
+                }
+
+                .titulo {
+                    font-size: 1.25rem; /* Ajustado para telas pequenas */
+                }
+
+                .live {
+                    font-size: 1rem; /* Ajustado para telas pequenas */
+                }
+
+                .donate {
+                    font-size: 1rem; /* Ajustado para telas pequenas */
+                }
+
+                .donate2 {
+                    font-size: 1.25rem; /* Ajustado para telas pequenas */
+                }
             }
         `}</style>
     </div>
