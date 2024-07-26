@@ -11,7 +11,11 @@ export default function HomePage() {
   const [barraVisible, setBarraVisible] = useState(false);
   const [horariosVisible, setHorariosVisible] = useState(false);
 <<<<<<< HEAD
+<<<<<<< HEAD
   const [homeVisible, setHomeVisible] = useState(false);
+=======
+  const [homeVisible, setHomeVisible] = useState(true);
+>>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
 =======
   const [homeVisible, setHomeVisible] = useState(true);
 >>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
@@ -55,7 +59,11 @@ export default function HomePage() {
       </Head>
       <Menu toggleBarra={toggleBarra} CalendarOpen={CalendarOpen} HomeOpen={HomeOpen} />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <Barra visible={barraVisible} MineOpen={MineOpen} />
+=======
+      <Barra visible={barraVisible} MineOpen={MineOpen}/>
+>>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
 =======
       <Barra visible={barraVisible} MineOpen={MineOpen}/>
 >>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { useEffect, useRef } from 'react';
 
 const Home = ({ visible }) => {
@@ -73,6 +74,8 @@ const Home = ({ visible }) => {
             }
 
 =======
+=======
+>>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
 // components/Horarios.js
 const Home = ({ visible }) => (
     <div className={`horarios ${visible ? 'visible' : 'hidden'}`}>
@@ -115,6 +118,9 @@ const Home = ({ visible }) => (
         </nav>
 
         <style jsx>{`
+<<<<<<< HEAD
+>>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
+=======
 >>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
             .horarios {
                 color: #ffffff;
@@ -124,6 +130,7 @@ const Home = ({ visible }) => (
                 width: 45%;
                 height: 70%;
                 font-size: 18px;
+<<<<<<< HEAD
 <<<<<<< HEAD
                 display: flex;
                 flex-direction: column;
@@ -242,6 +249,8 @@ const Home = ({ visible }) => (
                 justify-content: space-between;
                 width: 100%;
 =======
+=======
+>>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
                 position: absolute;
                 display: flex; /* Alterado para flex */
                 flex-direction: column;
@@ -250,6 +259,9 @@ const Home = ({ visible }) => (
                 left: 40%;
                 transform: translate(-50%, -50%);
                 z-index: 2; /* Para garantir que fique à frente da imagem */
+<<<<<<< HEAD
+>>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
+=======
 >>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
             }
 
@@ -261,6 +273,7 @@ const Home = ({ visible }) => (
 
             .finalsemana {
                 border-radius: 20px;
+<<<<<<< HEAD
 <<<<<<< HEAD
                 width: 80%;
                 margin: 0;
@@ -290,6 +303,8 @@ const Home = ({ visible }) => (
             .donate a {
                 color: #fff;
 =======
+=======
+>>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
                 margin: .5rem 2rem 2rem 2rem;
             }
 
@@ -318,6 +333,9 @@ const Home = ({ visible }) => (
 
             .donate a{
                 color: #fff; /* Cor do texto */
+<<<<<<< HEAD
+>>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
+=======
 >>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
                 text-decoration: none;
             }
@@ -331,6 +349,7 @@ const Home = ({ visible }) => (
                 padding-bottom: .5rem;
                 font-size: 4rem;
 <<<<<<< HEAD
+<<<<<<< HEAD
                 color: #fff;
                 text-shadow: 
                     0 0 5px #0075ff, 
@@ -338,19 +357,28 @@ const Home = ({ visible }) => (
                     0 0 15px #0075ff, 
                     0 0 35px #0075ff;
 =======
+=======
+>>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
                 color: #fff; /* Cor do texto */
                 text-shadow: 
                     0 0 5px #0075ff, /* Primeira camada de sombra (neon mais próximo) */
                     0 0 10px #0075ff, /* Segunda camada de sombra */
                     0 0 15px #0075ff, /* Terceira camada de sombra */
                     0 0 35px #0075ff; /* Sétima camada de sombra (neon mais distante) */
+<<<<<<< HEAD
+>>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
+=======
 >>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
             }
 
             .texto {
                 width: 80%;
 <<<<<<< HEAD
+<<<<<<< HEAD
                 height: auto;
+=======
+                height: 20%;
+>>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
 =======
                 height: 20%;
 >>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
@@ -359,9 +387,14 @@ const Home = ({ visible }) => (
             textarea {
                 width: 100%;
 <<<<<<< HEAD
+<<<<<<< HEAD
                 height: auto; /* Deixe a altura ajustar automaticamente */
                 resize: none; /* Desativa a opção de redimensionar */
                 overflow: hidden; /* Oculta as barras de rolagem */
+=======
+                height: 80%;
+                resize: none;
+>>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
 =======
                 height: 80%;
                 resize: none;
@@ -371,17 +404,23 @@ const Home = ({ visible }) => (
                 color: #fff;
                 font-size: 1rem;
 <<<<<<< HEAD
+<<<<<<< HEAD
                 text-align: center;
                 display: block; /* Permite que o textarea ajuste sua altura */
                 padding: 0;
                 margin: 0;
 =======
+=======
+>>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
                 text-align: center; /* Alinha o texto horizontalmente no centro */
                 display: flex;
                 justify-content: center; /* Alinha o texto verticalmente no centro */
                 align-items: center; /* Alinha o texto verticalmente no centro */
                 padding: 0; /* Remove o padding padrão */
                 margin: 0; /* Remove o margin padrão */
+<<<<<<< HEAD
+>>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
+=======
 >>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
             }
 
@@ -389,6 +428,7 @@ const Home = ({ visible }) => (
                 padding-top: .5rem;
                 padding-bottom: .5rem;
                 font-size: 2.5rem;
+<<<<<<< HEAD
 <<<<<<< HEAD
                 color: #fff;
                 text-decoration: none;
@@ -398,6 +438,8 @@ const Home = ({ visible }) => (
                     0 0 15px #0075ff, 
                     0 0 35px #0075ff;
 =======
+=======
+>>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
                 color: #fff; /* Cor do texto */
                 text-decoration: none;
                 text-shadow: 
@@ -405,6 +447,9 @@ const Home = ({ visible }) => (
                     0 0 10px #0075ff, /* Segunda camada de sombra */
                     0 0 15px #0075ff, /* Terceira camada de sombra */
                     0 0 35px #0075ff; /* Sétima camada de sombra (neon mais distante) */
+<<<<<<< HEAD
+>>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
+=======
 >>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
             }
             
@@ -412,6 +457,7 @@ const Home = ({ visible }) => (
                 display: block;
                 padding: .5rem;
                 font-size: 1rem;
+<<<<<<< HEAD
 <<<<<<< HEAD
                 color: #fff;
                 text-decoration: none;
@@ -494,6 +540,8 @@ const Home = ({ visible }) => (
     );
 }
 =======
+=======
+>>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
                 color: #fff; /* Cor do texto */
                 text-decoration: none;
             }
@@ -606,5 +654,8 @@ const Home = ({ visible }) => (
         `}</style>
     </div>
 );
+<<<<<<< HEAD
+>>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
+=======
 >>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
 export default Home;

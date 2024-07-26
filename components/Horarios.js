@@ -3,6 +3,7 @@ const Horarios = ({ visible }) => (
     <div className={`horarios ${visible ? 'visible' : 'hidden'}`}>
         <label className="titulo" style={{ fontFamily: 'Gagalin, Arial, sans-serif' }}>Calendario da semana</label>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <a className="live" href="https://twitch.tv/nokyturno" target="_blank" rel="noopener noreferrer" style={{ fontFamily: 'WCManoNegraBta, Arial, sans-serif' }}>Lives NokyTurno</a>
         <nav>
             <ul className="diasemana-list">
@@ -13,10 +14,15 @@ const Horarios = ({ visible }) => (
             <ul className="finalsemana-list">
                 <li className="finalsemana">
 =======
+=======
+>>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
         <a className="live" href="https://twitch.tv/nokyturno" target="_blank" rel="noopener noreferrer"  style={{ fontFamily: 'WCManoNegraBta, Arial, sans-serif' }}>Lives NokyTurno</a>
         <nav>
             <ul>
                 <li className="diasemana">
+<<<<<<< HEAD
+>>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
+=======
 >>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
                     <label className="semana" style={{ fontFamily: 'Chewy, Arial, sans-serif' }}>SEG</label>
                     <label className="hora" style={{ fontFamily: 'ModularFontFamily, Arial, sans-serif' }}></label>
@@ -28,7 +34,11 @@ const Horarios = ({ visible }) => (
                     <label className="hora" style={{ fontFamily: 'ModularFontFamily, Arial, sans-serif' }}></label>
                 </li>
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <li className="finalsemana">
+=======
+                <li className="diasemana">
+>>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
 =======
                 <li className="diasemana">
 >>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
@@ -37,7 +47,11 @@ const Horarios = ({ visible }) => (
                     <label className="hora" style={{ fontFamily: 'ModularFontFamily, Arial, sans-serif' }}></label>
                 </li>
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <li className="finalsemana">
+=======
+                <li className="diasemana">
+>>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
 =======
                 <li className="diasemana">
 >>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
@@ -46,11 +60,17 @@ const Horarios = ({ visible }) => (
                     <label className="hora" style={{ fontFamily: 'ModularFontFamily, Arial, sans-serif' }}></label>
                 </li>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
             </ul>
         </nav>
         <nav>
             <ul>
+<<<<<<< HEAD
+>>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
+=======
 >>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
                 <li className="finalsemana">
                     <label className="semana" style={{ fontFamily: 'Chewy, Arial, sans-serif' }}>SEX</label>
@@ -60,12 +80,15 @@ const Horarios = ({ visible }) => (
                 <li className="finalsemana">
                     <label className="semana" style={{ fontFamily: 'Chewy, Arial, sans-serif' }}>SAB</label>
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <label className="hora" style={{ fontFamily: 'ModularFontFamily, Arial, sans-serif' }}>HORARIO A DEFINIR</label>
                 </li>
                 <li className="finalsemana">
                     <label className="semana" style={{ fontFamily: 'Chewy, Arial, sans-serif' }}>DOM</label>
                     <label className="hora" style={{ fontFamily: 'ModularFontFamily, Arial, sans-serif' }}>HORARIO A DEFINIR</label>
 =======
+=======
+>>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
                     <label className="hora" style={{ fontFamily: 'ModularFontFamily, Arial, sans-serif' }}>HORARIO A</label>
                     <label className="hora" style={{ fontFamily: 'ModularFontFamily, Arial, sans-serif' }}>DEFINIR</label>
                 </li>
@@ -73,12 +96,16 @@ const Horarios = ({ visible }) => (
                     <label className="semana" style={{ fontFamily: 'Chewy, Arial, sans-serif' }}>DOM</label>
                     <label className="hora" style={{ fontFamily: 'ModularFontFamily, Arial, sans-serif' }}>HORARIO A</label>
                     <label className="hora" style={{ fontFamily: 'ModularFontFamily, Arial, sans-serif' }}>DEFINIR</label>
+<<<<<<< HEAD
+>>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
+=======
 >>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
                 </li>
             </ul>
         </nav>
 
         <style jsx>{`
+<<<<<<< HEAD
 <<<<<<< HEAD
             .horarios {
                 color: #ffffff;
@@ -241,6 +268,8 @@ const Horarios = ({ visible }) => (
             }
         `}</style>
 =======
+=======
+>>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
                 .horarios {
                     color: #ffffff;
                     background-color: #a0a0a042;
@@ -370,6 +399,9 @@ const Horarios = ({ visible }) => (
                     background-color: #555555;
                 }
             `}</style>
+<<<<<<< HEAD
+>>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
+=======
 >>>>>>> ce8c3c32ff2e7eeafd67fc735bd5af7f5c68cff9
     </div>
 );
