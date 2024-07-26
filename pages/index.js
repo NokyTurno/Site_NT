@@ -8,22 +8,33 @@ import Home from '../components/Home';
 import Minecraft from '../components/Minecraft';
 
 export default function HomePage() {
-  const [activeComponent, setActiveComponent] = useState('home');
+  const [barraVisible, setBarraVisible] = useState(false);
+  const [horariosVisible, setHorariosVisible] = useState(false);
+  const [homeVisible, setHomeVisible] = useState(true);
+  const [MineVisible, setMineVisible] = useState(false);
 
   const toggleBarra = () => {
-    setActiveComponent(prev => prev === 'barra' ? 'home' : 'barra');
+    setBarraVisible(!barraVisible);
   };
 
   const CalendarOpen = () => {
-    setActiveComponent('horarios');
+    setBarraVisible(false); // Oculta Barra
+    setHorariosVisible(true); // Exibe Horarios
+    setHomeVisible(false); // Oculta Home
+    setMineVisible(false); // Oculta Home
   };
 
   const HomeOpen = () => {
-    setActiveComponent('home');
+    setBarraVisible(false); // Oculta Barra
+    setHorariosVisible(false); // Oculta Horarios
+    setHomeVisible(true); // Exibe Home
+    setMineVisible(false); // Oculta Home
   };
-
   const MineOpen = () => {
-    setActiveComponent('minecraft');
+    setBarraVisible(false); // Oculta Barra
+    setHorariosVisible(false); // Oculta Horarios
+    setHomeVisible(false); // Exibe Home
+    setMineVisible(true); // Oculta Home
   };
 
   return (
@@ -39,10 +50,18 @@ export default function HomePage() {
         <title>NT</title>
       </Head>
       <Menu toggleBarra={toggleBarra} CalendarOpen={CalendarOpen} HomeOpen={HomeOpen} />
-      {activeComponent === 'barra' && <Barra visible={true} MineOpen={MineOpen} />}
-      {activeComponent === 'horarios' && <Horarios visible={true} />}
-      {activeComponent === 'home' && <Home visible={true} />}
-      {activeComponent === 'minecraft' && <Minecraft visible={true} />}
+      <Barra visible={barraVisible} MineOpen={MineOpen}/>
+      <div>
+        <main>
+          <div className="image-container" />
+          <div className="image-container2">
+            <img src="/Imagens/Perfil-semfundo.png" alt="Imagem" />
+          </div>
+          <Home visible={homeVisible} />
+          <Horarios visible={horariosVisible} />
+          <Minecraft visible={MineVisible} />
+        </main>
+      </div>
     </>
   );
 }

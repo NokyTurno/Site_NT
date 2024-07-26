@@ -30,20 +30,20 @@ const Barra = ({ visible, MineOpen }) => {
 
             <style jsx>{`
                 aside {
-                    background-color: #0000008a;
+                    background-color: #000000a6;
                     color: #000000;
                     width: 20%;
                     padding: 20px;
                     box-sizing: border-box;
                     flex-direction: column;
                     height: 98vh;
-                    position: fixed; 
-                    z-index: 9999; 
+                    position: fixed; /* Mudado para fixed para que fique na frente de tudo */
+                    z-index: 9999; /* Z-index alto para garantir que fique na frente */
                 }
 
                 :root {
                     --primary-item: #6c6c6c;
-                    --background-item: #000000;
+                    --background-item: #ooooo;
                     --gray: #D5D4D5;
                     --background: #2c2c2c;
                     --item-non-hover: #ffffff;
@@ -188,54 +188,6 @@ const Barra = ({ visible, MineOpen }) => {
                     background-color: #fff;
                     height: 2px;
                     min-width: 12px;
-                }
-
-                @media (max-width: 1200px) {
-                    aside {
-                        width: 30%;
-                    }
-
-                    .accordion-container > ul > li > a {
-                        width: 90%;
-                    }
-                }
-
-                @media (max-width: 768px) {
-                    aside {
-                        width: 40%;
-                        padding: 15px;
-                    }
-
-                    .accordion-container {
-                        min-width: 150px;
-                    }
-
-                    .main-item {
-                        padding: 10px;
-                    }
-
-                    .accordion-container > ul > li > a {
-                        width: 100%;
-                    }
-                }
-
-                @media (max-width: 480px) {
-                    aside {
-                        width: 60%;
-                        padding: 10px;
-                    }
-
-                    .accordion-container {
-                        min-width: 120px;
-                    }
-
-                    .main-item {
-                        padding: 8px;
-                    }
-
-                    .accordion-container > ul > li > a {
-                        width: 100%;
-                    }
                 }
             `}</style>
         </aside>
